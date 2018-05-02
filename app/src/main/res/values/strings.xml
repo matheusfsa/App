@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">App de Assistencia</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_programa_social1">ProgramaSocial1</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_info">Info</string>
+    <string name="title_voltar">Voltar</string>
+    <string name="title_avancar">Avançar</string>
+</resources>
