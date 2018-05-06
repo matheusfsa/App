@@ -19,9 +19,31 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
         <activity
-            android:name=".ProgramaSocial1"
-            android:label="@string/title_activity_programa_social1"></activity>
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadastroEtapa1"
+            android:label="@string/title_activity_cadastro_etapa1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Info2"
+            android:label="@string/title_activity_info2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadastroEtapa2"
+            android:label="@string/title_activity_cadastro_etapa2"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadastroEtapa3"
+            android:label="@string/title_activity_cadastro_etapa3"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

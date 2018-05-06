@@ -6,56 +6,50 @@
     android:layout_height="match_parent"
     android:background="@color/background"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".Info"
-    tools:showIn="@layout/activity_info">
+    tools:context=".Info2"
+    tools:showIn="@layout/activity_info2">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="334dp"
+        android:layout_height="334dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/text_info3"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="24dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/oie_transparent" />
+        app:srcCompat="@drawable/oie_menor" />
 
-    <TextView
-        android:id="@+id/textView4"
+    <Button
+        android:id="@+id/avancar_info2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="7dp"
         android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
+        android:layout_marginRight="7dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="44dp"
-        android:text="@string/text_info"
-        android:textSize="16sp"
-        android:typeface="normal"
-        app:fontFamily="@font/telex"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/botao_redondo"
+        android:text="Avancar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
-
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="338dp"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        android:autoText="false"
-        android:text="@string/text_info2"
-        android:textSize="16sp"
-        android:typeface="normal"
-        app:fontFamily="@font/telex"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4" />
-
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </android.support.constraint.ConstraintLayout>

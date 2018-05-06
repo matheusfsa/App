@@ -9,24 +9,23 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.Button;
 
-public class Info extends AppCompatActivity {
+public class Info2 extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_info);
-        Button b = (Button) findViewById(R.id.button);
+        setContentView(R.layout.activity_info2);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+        Button b = (Button) findViewById(R.id.avancar_info2);
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-                Intent info2 = new Intent(Info.this, Info2.class);
-                startActivity(info2);
+                Intent dashboard = new Intent(Info2.this, Dashboard.class);
+                startActivity(dashboard);
             }
         });
-
     }
 
 }

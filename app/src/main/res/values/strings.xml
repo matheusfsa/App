@@ -7,6 +7,21 @@
     <string name="title_notifications">Notifications</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="title_activity_info">Info</string>
-    <string name="title_voltar">Voltar</string>
-    <string name="title_avancar">Avançar</string>
+    <string name="sim">Sim</string>
+    <string name="nao">Não</string>
+    <string name="text_info">OLÁ,</string>
+    <string name="text_info2"> SOMOS DA ONG ARQUITETOS SEM CRACHÁS.\n\n SE VOCÊ TEM RENDA FAMILIAR DE ATÉ TRÊS\n SALÁRIOS  MINIMOS   E  PRECISA DE SUPORTE\n TÉCNICO PARA REFORMAR, CONSTRUIR OU\n REGULARIZAR SEU IMÓVEL, PODE CONTAR\n\t\t\t\t\t\t\t\t\t  COM NOSSA AJUDA.\n\n VOCÊ NÃO PAGA NADA POR ISSO, É SÓ SE\n\t\t\t\t\t\t\t\t\t   CADASTRAR.</string>
+    <string name="text_info3">A lei  federal 11.888/2008, em conjunto com a lei municipal 3.169/2004, garantem que qualquer pessoa com renda familiar entre zero e três salários mínimos tem direito á assistência técnica gratuita para construir, reformar ou regularizar seu imómel.\n\n Este aplicativo é um ambiente digital que\n reúne moradores que desejam melhorar suas casas, profissionais da área, o Estado e a iniciativa privada.\n\n Aqui você pode ser cadastrar e nos informar seus dados e demandas, assim poderemos conhecer melhor suas necessidades e propor soluções que ajudem você e sua comunidade.\n\nÉ tudo muito simples: você nos informar seus\n dados, nós analisamos, entramos em contato e marcamos uma visita.</string>
+    <string name="saiba_mais">Saiba Mais</string>
+    <string name="cadastre_se">Cadastre-se</string>
+    <string name="quem_somos">Quem Somos?</string>
+    <string name="como_funciona">Como Funciona</string>
+    <string name="sugestoes">Sugestões</string>
+    <string name="noticias">Notícias</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="title_activity_cadastro_etapa1">CadastroEtapa1</string>
+    <string name="title_activity_info2">Info2</string>
+    <string name="renda">Renda Familiar</string>
+    <string name="title_activity_cadastro_etapa2">CadastroEtapa2</string>
+    <string name="title_activity_cadastro_etapa3">CadastroEtapa3</string>
 </resources>
