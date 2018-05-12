@@ -1,17 +1,30 @@
 package classes;
 
-public class Pessoa {
+import java.io.Serializable;
+
+public class Pessoa implements Serializable{
     private String nome;
     private String sobrenome;
     private String cpf;
     private String numero;
     private String data_nascimento;
-    public Pessoa(String nome, String sobrenome, String cpf, String numero, String data_nascimento){
+    private String renda;
+
+    public String getRenda() {
+        return renda;
+    }
+
+    public void setRenda(String renda) {
+        this.renda = renda;
+    }
+
+    public Pessoa(String nome, String sobrenome, String cpf, String numero, String data_nascimento, String renda){
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.cpf = cpf;
         this.numero = numero;
         this.data_nascimento = data_nascimento;
+        this.renda = renda;
     }
     public String getNome() {
         return nome;
@@ -51,5 +64,11 @@ public class Pessoa {
 
     public void setData_nascimento(String data_nascimento) {
         this.data_nascimento = data_nascimento;
+    }
+
+    @Override
+    public String toString() {
+        String res = nome + ", " + cpf + ", " + numero + ", " + data_nascimento + ", " + renda;
+        return res;
     }
 }

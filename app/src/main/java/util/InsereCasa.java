@@ -1,13 +1,10 @@
-package  util;
+package util;
+
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.util.Log;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -15,19 +12,19 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.io.OutputStream;
-
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import classes.Casa;
 import classes.Pessoa;
 
-public class IncluirAsyncTask extends  AsyncTask<String, String, String>{
+public class InsereCasa extends AsyncTask<String, String, String> {
     public static  final int CONNECTION_TIMEOUT = 10000;
     public static  final int READ_TIMEOUT = 15000;
     public static  final String URL_GET = "https://santosalmeidamatheus.000webhostapp.com/wsGetData.php";
-    public static  final String URL_PUT = "https://santosalmeidamatheus.000webhostapp.com/wsPutData.php";
+    public static  final String URL_PUT = "https://santosalmeidamatheus.000webhostapp.com/IncluirCasa.php";
     public static  final String LOG_TAG = "appdeassistencia";
     ProgressDialog progressDialog;
 
@@ -38,20 +35,20 @@ public class IncluirAsyncTask extends  AsyncTask<String, String, String>{
     Context context;
 
 
-    public IncluirAsyncTask(Pessoa obj, Context context){
+    public InsereCasa(Casa obj, Context context){
         this.builder = new Uri.Builder();
 
         this.context = context;
 
         builder.appendQueryParameter("app", "Assistencia");
-        builder.appendQueryParameter("nome", obj.getNome());
-        builder.appendQueryParameter("sobrenome", obj.getSobrenome());
-        builder.appendQueryParameter("cpf", obj.getCpf());
-        builder.appendQueryParameter("telefone", obj.getNumero());
-        builder.appendQueryParameter("nascimento", obj.getData_nascimento());
-        builder.appendQueryParameter("renda", obj.getRenda());
+        builder.appendQueryParameter("morador", obj.getMorador().getCpf());
+        builder.appendQueryParameter("cep", obj.getCep());
+        builder.appendQueryParameter("bairro", obj.getBairro());
+        builder.appendQueryParameter("rua", obj.getRua());
+        builder.appendQueryParameter("numero", obj.getNumero());
+        builder.appendQueryParameter("complemento", obj.getComplemento());
+        builder.appendQueryParameter("comentario", obj.getComentario());
 
-        //builder.appendQueryParameter("idade", "10");
     }
 
     @Override

@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.msa.appdeassistencia">
+
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -43,6 +45,34 @@
         <activity
             android:name=".CadastroEtapa3"
             android:label="@string/title_activity_cadastro_etapa3"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".CadastroEtapa4"
+            android:label="@string/title_activity_cadastro_etapa4"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TelaFinal"
+            android:label="@string/title_activity_tela_final"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QuemSomos"
+            android:label="@string/title_activity_quem_somos"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ComoFunciona"
+            android:label="@string/title_activity_como_funciona"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Sugestoes"
+            android:label="@string/title_activity_sugestoes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Noticia"
+            android:label="@string/title_activity_noticia"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListarNoticias"
+            android:label="@string/title_activity_listar_noticias"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

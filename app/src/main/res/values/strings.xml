@@ -24,4 +24,17 @@
     <string name="renda">Renda Familiar</string>
     <string name="title_activity_cadastro_etapa2">CadastroEtapa2</string>
     <string name="title_activity_cadastro_etapa3">CadastroEtapa3</string>
+    <string name="title_activity_cadastro_etapa4">CadastroEtapa4</string>
+    <string name="title_activity_tela_final">TelaFinal</string>
+    <string name="title_activity_quem_somos">QuemSomos</string>
+    <string name="title_quem_somos">Quem Somos</string>
+    <string name="txt_quem_somos">TXT</string>
+    <string name="title_como_funciona">Como Funciona</string>
+    <string name="txt_como_funciona">TXT</string>
+    <string name="title_sugestoes">Sugestões</string>
+    <string name="txt_sugestoes">TXT</string>
+    <string name="title_activity_como_funciona">ComoFunciona</string>
+    <string name="title_activity_sugestoes">Sugestoes</string>
+    <string name="title_activity_noticia">Noticia</string>
+    <string name="title_activity_listar_noticias">ListarNoticias</string>
 </resources>

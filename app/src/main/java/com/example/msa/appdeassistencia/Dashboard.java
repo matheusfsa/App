@@ -28,6 +28,27 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(cadastro);
             }
         });
+        qs.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent qsomos = new Intent(Dashboard.this, QuemSomos.class);
+                startActivity(qsomos);
+            }
+        });
+        cf.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent cfu = new Intent(Dashboard.this, ComoFunciona.class);
+                startActivity(cfu);
+            }
+        });
+        sug.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sugg = new Intent(Dashboard.this, Sugestoes.class);
+                startActivity(sugg);
+            }
+        });
     }
 
 }
