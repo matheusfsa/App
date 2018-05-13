@@ -1,11 +1,16 @@
 package com.example.msa.appdeassistencia;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
+import android.widget.TextView;
+
+import classes.NoticiaObj;
 
 public class Noticia extends AppCompatActivity {
 
@@ -15,13 +20,20 @@ public class Noticia extends AppCompatActivity {
         setContentView(R.layout.activity_noticia);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
+        NoticiaObj n = (NoticiaObj)getIntent().getSerializableExtra("noticia");
+        TextView titulo = (TextView)findViewById(R.id.titulo_not);
+        TextView data = (TextView)findViewById(R.id.data_not);
+        TextView texto = (TextView)findViewById(R.id.body);
+        titulo.setText(n.getNoticia());
+        data.setText(n.getData());
+        texto.setText(n.getTxt());
+        Button voltar = (Button)findViewById(R.id.btn_vol_not);
+        voltar.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+            public void onClick(View v) {
+                Intent intent = new Intent(Noticia.this, ListarNoticias.class);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+                startActivity(intent);
             }
         });
     }

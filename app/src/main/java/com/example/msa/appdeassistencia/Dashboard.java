@@ -49,6 +49,13 @@ public class Dashboard extends AppCompatActivity {
                 startActivity(sugg);
             }
         });
+        not.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent sugg = new Intent(Dashboard.this, ListarNoticias.class);
+                startActivity(sugg);
+            }
+        });
     }
 
 }
