@@ -22,7 +22,7 @@ public class ComoFunciona extends AppCompatActivity {
         TextView titulo = (TextView)findViewById(R.id.titulo_txt) ;
         titulo.setText(R.string.title_como_funciona);
         TextView txt = (TextView)findViewById(R.id.txt) ;
-        txt.setText(R.string.text_info2);
+        txt.setText("Como Funciona");
         Button voltar = (Button)findViewById(R.id.btn_voltar2);
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override

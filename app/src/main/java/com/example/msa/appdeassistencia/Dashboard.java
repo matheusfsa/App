@@ -24,7 +24,7 @@ public class Dashboard extends AppCompatActivity {
         cadastro.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent cadastro = new Intent(Dashboard.this, CadastroEtapa1.class);
+                Intent cadastro = new Intent(Dashboard.this, Precadastro.class);
                 startActivity(cadastro);
             }
         });

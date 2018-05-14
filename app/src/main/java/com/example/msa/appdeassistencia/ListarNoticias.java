@@ -70,7 +70,7 @@ public class ListarNoticias extends AppCompatActivity {
         voltar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(ListarNoticias.this, ListarNoticias.class);
+                Intent intent = new Intent(ListarNoticias.this, Dashboard.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
                 startActivity(intent);
             }
@@ -185,7 +185,7 @@ public class ListarNoticias extends AppCompatActivity {
                     lista.add(new NoticiaObj("titulo","12/05/2017","tituloadsdakdsjasdoksaodkodsodjosjadojodsoajdojoadjosajdojasodjoasjdoj"));
                     for (int i = 0; i<jsonArray.length();i++){
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-                        lista.add(new NoticiaObj(jsonObject.getString("titulo"),jsonObject.getString("data"),jsonObject.getString("texto")));
+                        lista.add(new NoticiaObj(jsonObject.getString("titulo"),jsonObject.getString("publicacao"),jsonObject.getString("texto")));
                         adapter.notifyDataSetChanged();
                         System.out.println(lista.size());
                     }

@@ -73,6 +73,10 @@
         <activity
             android:name=".ListarNoticias"
             android:label="@string/title_activity_listar_noticias"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Precadastro"
+            android:label="@string/title_activity_precadastro"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
