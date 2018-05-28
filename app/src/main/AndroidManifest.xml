@@ -77,6 +77,10 @@
         <activity
             android:name=".Precadastro"
             android:label="@string/title_activity_precadastro"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".QRCodeReader"
+            android:label="@string/title_activity_qrcode_reader"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

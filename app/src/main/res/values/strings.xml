@@ -38,4 +38,5 @@
     <string name="title_activity_noticia">Noticia</string>
     <string name="title_activity_listar_noticias">ListarNoticias</string>
     <string name="title_activity_precadastro">Precadastro</string>
+    <string name="title_activity_qrcode_reader">QRCodeReader</string>
 </resources>
